@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zeus do Cell - Assistência Técnica</title>
+    <style>
+      body {
+        font-family: Arial-black, sans-serif;
+        color: white;  /* cor preta para o texto */
+        background-color: black;  /* cor branca para o fundo */
+        background-image: url(https://example.com/maintenance-bg.jpg);
+        background-size: cover;
+      }
+      header {
+        background-color: darkblue;  /* cor azul claro para o cabeçalho */
+        color: #fff;  /* cor branca para o texto */
+        padding: 20px;
+        text-align: center;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;  /* cor preta para o menu */
+      }
+      nav a {
+        display: block;
+        color: #fff;  /* cor branca para os links */
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color: #3498db;  /* cor azul claro para o fundo quando o mouse estiver sobre o link */
+      }
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      section {
+        margin-bottom: 20px;
+      }
+      footer {
+        background-color: #333;  /* cor preta para o rodapé */
+        color: #fff;  /* cor branca para o texto */
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Zeus do Cell</h1>
+      <h2>Assistência Técnica</h2>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <main>
+	<script type="text/javascript" src="https://files.fm/gallery_module/v1/js/?hash=5852hzby9&view=horizontal" id="files_fm_upload_script_tag"></script>
+      <section id="sobre">
+        <h3>Sobre</h3>
+        <p>A Zeus do Cell é uma empresa especializada em assistência técnica para dispositivos móveis. Oferecemos serviços de reparo, troca de peças e manutenção preventiva para smartphones, tablets e outros dispositivos.</p>
+      </section>
+      <section id="servicos">
+        <h3>Serviços</h3>
+        <ul>
+          <li>Reparo de tela</li>
+          <li>Troca de bateria</li>
+          <li>Reparo de conectores de carregamento e fone de ouvido</li>
+          <li>Manutenção preventiva</li>
+          <li>Outros reparos</li>
+        </ul>
+      </section>
+      <section id="localizacao">
+        <h3>Localização</h3>
+        <p>A Zeus do Cell fica localizada na Rua Exemplo, 123 - Centro - Cidade, Estado</p>
+        <div id="map"></div>
+        <script>
+          function initMap() {
+            var location = {lat: -25.363, lng: 131.044};
+            var map = new google.maps.Map(document.getElementById("map"), {
+              zoom: 4,
+              center: location
+            });
+            var marker = new google.maps.Marker({
+              position: location,
+              map: map
+            });
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=SUA_API_KEY&callback=initMap">
+        </script>
+      </section>
+      <section id="contato">
+        <h3>Contato</h3>
+        <p>Entre em contato conosco através do formulário abaixo ou pelo seguinte email: zeusdocell@email.com</p>
+        <form>
+          <label for="nome">Nome:</label><br>
+          <input type="text" id="nome" name="nome"><br>
+          <label for="email">Email:</label><br>
+          <input type="text" id="email" name="email"><br>
+          <label for="assunto">Assunto:</label><br>
+          <input type="text" id="assunto" name="assunto"><br>
+          <label for="mensagem">Mensagem:</label><br>
+          <textarea id="mensagem" name="mensagem" rows="10" cols="50"></textarea><br>
+          <input type="submit" value="Enviar">
+        </form> 
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2021 Zeus do Cell</p>
+    </footer>
+  </body>
+</html>
+
